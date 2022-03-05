@@ -61,14 +61,14 @@ async def _(e):
             a = await e.client.get_entity(user)
             g = a.id
             if int(g) in RiZoeLX:
-                text = f"I can't Dm to @RiZoeLX's Owner"
+                text = f"I can't Dm to My Owner"
                 await e.reply(text, parse_mode=None, link_preview=None )
             elif int(g) in SUDO_USERS:
                 text = f"This guy is a sudo user."
                 await e.reply(text, parse_mode=None, link_preview=None )
             else:            
                  message = str(RiZoeL[1])
-                 await e.reply("🔸Message Delivered🔸")
+                 await e.reply("🦋 Message Delivered 🦋")
                  await e.client.send_message(g, message)
                  await asyncio.sleep(0.3)
         elif e.reply_to_msg_id:             
@@ -76,14 +76,14 @@ async def _(e):
             b = await e.client.get_entity(a.sender_id)
             g = b.id
             if int(g) in RiZoeLX:
-                text = f"I can't Dm to @RiZoeLX's Owner"
+                text = f"I can't Dm to my Owner"
                 await e.reply(text, parse_mode=None, link_preview=None )
             elif int(g) in SUDO_USERS:
                 text = f"This guy is a sudo user."
                 await e.reply(text, parse_mode=None, link_preview=None )
             else:
                 message = str(RiZoeL[0])
-                await e.reply("🔸 Message Delivered 🔸")
+                await e.reply("🦋 Message Delivered 🦋")
                 await e.client.send_message(g, message)
                 await asyncio.sleep(0.3)
 
@@ -143,14 +143,14 @@ async def dmraid(e):
             a = await e.client.get_entity(user)
             g = a.id
             if int(g) in RiZoeLX:
-                text = f"I can't raid on @RiZoeLX's Owner"
+                text = f"I can't raid on my Owner"
                 await e.reply(text, parse_mode=None, link_preview=None )
             elif int(g) in SUDO_USERS:
                 text = f"This guy is a sudo user."
                 await e.reply(text, parse_mode=None, link_preview=None )
             else:
                 counter = int(RiZoeL[0])
-                await e.reply("⚜️ Dm Raid Strated Successfully ⚜️")
+                await e.reply("🛠️ Dm Raid Started Successfully ⚜️")
                 for _ in range(counter):
                     reply = random.choice(RAID)
                     caption = f"{reply}"
@@ -162,7 +162,7 @@ async def dmraid(e):
             b = await e.client.get_entity(a.sender_id)
             g = b.id
             if int(g) in RiZoeLX:
-                text = f"I can't raid on @RiZoeLX's Owner"
+                text = f"I can't raid on my Owner"
                 await e.reply(text, parse_mode=None, link_preview=None )
             elif int(g) in SUDO_USERS:
                 text = f"This guy is a sudo user."
